@@ -23,7 +23,40 @@ It will
     * In Catnip, type f.ex. `(println "hello")` and press Control-E to evaluate it to see that all is working
     * Press Control-C in the console to stop Catnip
 
+### Development Environments
+
+Recommended:
+
+* Catnip (installed by the script)
+
+Partially supported:
+
+* Eclipse with Counterclockwise (quite popular)
+* IntelliJ with LaClojure (somehow outdated)
+* Emacs with [Clojure Mode](https://github.com/technomancy/clojure-mode) and [nREPL](https://github.com/kingtim/nrepl.el)
+
+Unsupported (but you're free to try it anyway at your own risk):
+
+* LightTable
+
 Congratulations! You are now ready for the workshop.
+
+The workshop
+------------
+
+The workshop consists of:
+
+1. Brief introduction
+2. Clojure-mini tutorial: a "minimal" subset of Clojure with fall-back to Java enabling you to read Clojure source codes and write interesting stuff; accompanied by hands-on tasks
+3. The project of building a todo webapp using Noir
+
+### The tasks
+
+You should be able to finish each task in a short time, using the Clojure taught so far and Java.
+
+### Project: The ultimate todo webapp
+
+TBD
 
 ----
 
