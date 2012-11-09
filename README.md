@@ -6,6 +6,10 @@ A practical, hands-on introduction into programming Clojure, the best JVM langua
 Preparation before the workshop
 -------------------------------
 
+To get this repository:
+
+    bash$ git clone git://github.com/iterate/iterate-clojure-workshop12.git; cd iterate-clojure-workshop12
+
 To get all the tools you will need ready, execute the attached script (you might want to check/modify it if you already have Leiningen or Catnip installed):
 
     bash$ source prepare_all.sh
@@ -21,3 +25,6 @@ It will
 
 Congratulations! You are now ready for the workshop.
 
+----
+
+Produced by Ivar, Jakub, Lars @ Iterate 2012
