@@ -13,13 +13,14 @@ To get this repository:
 To get all the tools you will need ready, execute the attached script (you might want to check/modify it if you already have Leiningen or Catnip installed):
 
     bash$ source prepare_all.sh
+    # Note: If downloading of dependencies gets stucked then stop it via Control-C and run './lein' manually
 
 It will
 
 * Download and initialize the latest Leiningen 2 (Clojure build tool)
 * Leiningen will download Clojure 1.4.0
-* It will download and start Catnip, the leightweight in-browse Clojure IDE;
-    * Catnip should start a browser, if it doesn't, upon the URL printed.
+* It will download and start Catnip, the leightweight in-browser Clojure IDE;
+    * Catnip should start a browser, if it doesn't, open the URL printed (Catnip is optimized for Chrome so use that)
     * In Catnip, type f.ex. `(println "hello")` and press Control-E to evaluate it to see that all is working
     * Press Control-C in the console to stop Catnip
 
@@ -27,7 +28,7 @@ It will
 
 Recommended:
 
-* Catnip (installed by the script)
+* Catnip (installed by the script; also supports the Markdown format used by this document)
 
 Partially supported:
 
@@ -48,6 +49,8 @@ We have added the Catnip Leiningen plugin as an explicit dependency of this proj
         ]
     }}
 
+Trying to run `lein edit` without having Catnip in profiles or the project.clj will result in the failure "'edit' is not a task."
+
 ### Ready, steady, go!
 
 Congratulations! You are now ready for the workshop.
@@ -65,24 +68,64 @@ The workshop consists of:
 
 You should be able to finish each task in a short time, using the Clojure taught so far and Java. You can use Catnip for them - simply run `lein edit` in this directory.
 
+Tip: Don't waste time, whenever lost, unsure how to progress, or experiencing problems, ask the instructors for assistence.
+
 ### Project: The ultimate todo webapp
 
 You will create a simple TODO web application using the popular Clojure web framework Noir.
+
+Tip: Do not hesitate to ask the instructors for assistence. You are expected to encounter problems
+that you cannot solve. Try to handle it yourself first but if it takes over 1/2 min, ask for help.
 
 #### 1. Create the project
 
 With Leiningen 2 it is easy:
 
-    export PATH="$PATH:$(pwd)"  # add lein to the path, run in this directory
+    export PATH="$PATH:$(pwd)"  	# add lein to the path; run it in this directory
     lein new noir ultimate-todo
+    cp project.clj.ultimate-todo ultimate-todo/project.clj
     cd ultimate-todo
-    lein run
+    lein run &  			# run the webapp
+    lein edit   			# start Catnip
 
-To use the Leiningen Catnip plugin, you will need to add it to the created `project.clj` similarly as it is in the one in this directory.
+(We'll use an improved project.clj that makes sure that Catnip is available and fixes a dependency conflict to make it works.)
 
-#### 2. ?
+Notice that Noir will pick up and reload changes to its source files automatically (a side-effect is the loss of any session state in the webapp).
 
-TBD // follow the built-in tutorial with slight modifications and fixes
+#### 2. Getting to know Noir: The built-in tutorial
+
+We will first get to know Noir by following the instructions it shows when started at [localhost:8080](http://localhost:8080/) to build a simple page.
+
+#### 3. Building the ultimate todo webapp
+
+We will follow the Getting started instructions at [webnoir.org](http://webnoir.org/) 
+(aside of the project creation). Notice that the instructions aren't complete, they don't show 
+you how to write the "back-end" functions and data structures (such as `all-todos`, `add-todo`, 
+`remove-todo`) - you will need to find that out yourself.
+
+Suggestions for progress:
+
+1. Start by building a completely static site (hard-coded, fixed todo list)
+2. Use a global variable and Java HashMap to hold the state
+3. (Advanced) Use Clojure map instead of Java HashMap
+4. (Advanced) Use Clojure [atom](http://clojure.org/atoms) instead of the global variable ([more here](http://blakesmith.me/2012/05/25/understanding-clojure-concurrency-part-2.html))
+
+Tips & catches:
+
+* Use e.g. `curl` to test adding and removing todos
+* Numbers in Clojure are java.lang.Long and not integers; the values of post/get parameters in Noir are strings
+* You can test `(defpartial fname ...)` simply a calling it as a function: `(fname ...)`
+* You might want to run `lein -o repl` aside of Catnip to have access to its built-in
+ documentation lookup (doc, user/clojuredocs, find-doc, source) if Catnip's Ctrl-H isn't enough
+
+#### 4. Extending the todo webapp
+
+If you have time an energy, you can go on extending the todo webapp:
+
+* [Add a form](http://webnoir.org/tutorials/forms) for creating new todos
+* Extend todos with priority and sort them by priority (f.ex. high, normal, low)
+
+Check [Noir's documentation and examples](http://webnoir.org/tutorials).
 
 ----
 
