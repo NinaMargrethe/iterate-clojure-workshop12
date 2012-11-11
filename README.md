@@ -29,6 +29,8 @@ It will
 Recommended:
 
 * Catnip (installed by the script; also supports the Markdown format used by this document)
+    * Why Catnip? It is simple to install, sufficient, written in Clojure, and in Norway
+    * Tip: Exceptionally you might need to force the repl to forget a function; execute `(ns-unmap *ns* 'name-of-the-test)` in the REPL
 
 Partially supported:
 
@@ -67,6 +69,8 @@ The workshop consists of:
 ### The tasks
 
 You should be able to finish each task in a short time, using the Clojure taught so far and Java. You can use Catnip for them - simply run `lein edit` in this directory.
+
+Don't read the \*.solutions.clj files and further tasks ahead of time since revealing the solution would spoil the fun.
 
 Tip: Don't waste time, whenever lost, unsure how to progress, or experiencing problems, ask the instructors for assistence.
 
