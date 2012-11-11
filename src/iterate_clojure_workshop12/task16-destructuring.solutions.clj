@@ -29,7 +29,7 @@
   (is (= "1814\tDuck, Donald" (check-debt ["Donald" "Duck"]))))
 
 ;; ### TASK B ###
-;; Company finder 3: Change company-finder from task9-functions.clj
+;; Company finder 3: Change company-finder from task8-functions.clj
 ;; to use named arguments (i.e. a destructured map)"
 
 ; TODO

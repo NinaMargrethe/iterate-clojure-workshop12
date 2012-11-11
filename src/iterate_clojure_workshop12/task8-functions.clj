@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task9-functions
+(ns iterate-clojure-workshop12.task8-functions
   (:require [clojure.test :refer :all]))
 
 ;; TIP:
