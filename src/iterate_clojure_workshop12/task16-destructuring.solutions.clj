@@ -6,6 +6,7 @@
 ;;  to use ["fname" "lname"] instead of "fname lname" and modify
 ;; check-debt to return "amount<tab>lname, fname"
 ;; ex: "1814 Duck, Donald"
+;; Use destructuring in check-debtor's arguments to take the name vector apart.
 ;; Tips: use the function str similarly as you'd use println
 
 ; TODO

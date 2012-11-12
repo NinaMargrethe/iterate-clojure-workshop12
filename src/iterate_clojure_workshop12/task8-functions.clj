@@ -27,6 +27,7 @@
 ;; Create function iff [cond, if-val, else-val] that returns 
 ;; the if-val if cond is true otherwise else-val.
 ;; Use a map to implement it.
+;; FIXME(ivar): better description
 
 ; TODO
 

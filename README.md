@@ -66,6 +66,11 @@ The workshop consists of:
 2. Clojure-mini tutorial: a "minimal" subset of Clojure with fall-back to Java enabling you to read Clojure source codes and write interesting stuff; accompanied by hands-on tasks
 3. The project of building a todo webapp using Noir
 
+### Documentation
+
+*TBD: our & clojure cheatsheat, clojuredocs.org w/ examples, st. else?*
+
+
 ### The tasks
 
 You should be able to finish each task in a short time, using the Clojure taught so far and Java. You can use Catnip for them - simply run `lein edit` in this directory.
