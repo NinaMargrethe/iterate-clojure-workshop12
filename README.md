@@ -66,10 +66,12 @@ The workshop consists of:
 2. Clojure-mini tutorial: a "minimal" subset of Clojure with fall-back to Java enabling you to read Clojure source codes and write interesting stuff; accompanied by hands-on tasks
 3. The project of building a todo webapp using Noir
 
-### Documentation
+### Clojure reference documentation
 
-*TBD: our & clojure cheatsheat, clojuredocs.org w/ examples, st. else?*
-
+* [Clojure-mini cheatsheet](https://docs.google.com/document/pub?id=1ELQ0S03SLwYm1G-iXMQXnLDoKTggD93FqIMD9_ME5og)
+* [Official Clojure heatsheet](http://clojure.org/cheatsheet)
+* [Doc & examples for functions at clojuredocs.org](http://clojuredocs.org/)
+* REPL: `(doc <function-name>)`, `(find-doc <regular expression string/pattern>)`, examples: `(cdoc <function name>)`
 
 ### The tasks
 
