@@ -28,3 +28,10 @@
 
 ;; Modify the previous solution to find the complete map of the oldest person using reduce.
 ;; TIP: use the second form of reduce with an initial value.
+
+(reduce
+  (fn [prevVal person]
+    (if (< (get prevVal :age) (get person :age)) person))
+  {:age 0}
+  '({ :name "Lars", :age 25 },
+      { :name "Jakub", :age 32 }))
