@@ -1,6 +1,6 @@
 #!/bin/sh
 echo ">>> Downloading Leiningen 2 ..."
-wget https://raw.github.com/technomancy/leiningen/preview/bin/lein
+wget --no-check-certificate https://raw.github.com/technomancy/leiningen/preview/bin/lein
 chmod u+x lein
 
 echo
