@@ -24,6 +24,17 @@ It will
     * In Catnip, type f.ex. `(println "hello")` and press Control-E to evaluate it to see that all is working
     * Press Control-C in the console to stop Catnip
 
+### Ponder your reasons why Clojure might be interesting
+
+One common complain was that we jumped into Clojure without really communication its value. While we would live to do that,
+we believe our time together is more efficiently spent conding and you can well do it yourself. 
+Respecting your time constraints, have a look at the following, priority-ordered motivtion treasures:
+
+1. [Land of Lisp](http://landoflisp.com/) (Clojure primarily is a lisp) - scroll down a little; click on guild names for more info
+2. [Clojure Philosophy](http://www.manning.com/fogus/) at the The Joy of Clojure page at Manning
+3. Paul Graham's legendary essay [Beating the Averages](http://www.paulgraham.com/avg.html)
+4. The great talk [Simple Made Easy](http://www.infoq.com/presentations/Simple-Made-Easy) by Rich Hickey
+
 ### Development Environments
 
 Recommended:
