@@ -4,12 +4,14 @@
 ;; TIP:
 ;; Whenever you save this file in Catnip (Ctrl-S), it will be automatically 
 ;; re-loaded by the REPL below so you can use it to experiment with your new 
-;; code (ex.: write a simple function, ctrl-S, Ctrl-R, call the function to 
-;; verify it returnes what expected)
+;; code.
+;; Ex.: write a simple function, Ctrl-S, Ctrl-R to jump to repl, call the function to 
+;; verify it returnes what expected. The REPL is stateful and remembers defs etc.
 
 ;; ### TASK A ###
 ;; Company finder 2: Create the function company-finder that 
-;; takes [street num city] and returns the company there.
+;; takes [street num city] and returns the company there,
+;; using the map created in task 6
 ;; The map should not be visible outside of the function.
 
 ; TODO
@@ -29,31 +31,11 @@
 ;; Use a map to implement it.
 ;; FIXME(ivar): better description
 
-; TODO
+; TODO (uncomment the test below first)
 
 ;; Test for the function
-;(comment
+(comment
 (deftest iff-test
   (is (= "It's true!" (iff (> 1 0) "It's true!" "Your math is wrong")))
   (is (= :falsy (iff false :truthy :falsy))))
-;)
-
-;; ### TASK C (optional) ###
-;; Write the function iff-fn similar to B but if-val and else-val are functions 
-;; that are executed and 
-;; their result is returned; only the function that is actually needed
-;; should be executed.
-;; Use the new function in the company finder to print 
-;; "Sorry, that street isn't that long" and return nil if the street number 
-;; is higher than the street's length
-;; You can hard-code the street length as 3
-;; Tip: println returns nil
-
-; TODO
-
-;; Test for the function
-;(comment
-(deftest company-finder2-test
-  (is (= "Iterate" (company-finder2 "Bygdøy allé" 0 "New Oslo")))
-  (is (nil? (company-finder2 "Bygdøy allé" Integer/MAX_VALUE "New Oslo"))))
-;)
+)

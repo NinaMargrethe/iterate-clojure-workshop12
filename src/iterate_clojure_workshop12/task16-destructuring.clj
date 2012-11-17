@@ -21,12 +21,13 @@
 ;; Company finder 3: Change company-finder from task8-functions.clj
 ;; to use named arguments (i.e. a destructured map)"
 
-; TODO
+; TODO (uncomment the test first)
 
 ;; Test
+(comment
 (deftest company-finder-test
   (is (= "ComoYo" 
     (company-finder 
       {:street "Bygdøy allé", :num 1, :city "New Oslo"}))))
-
+)
 
