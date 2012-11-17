@@ -35,6 +35,8 @@ Respecting your time constraints, have a look at the following, priority-ordered
 3. Paul Graham's legendary essay [Beating the Averages](http://www.paulgraham.com/avg.html)
 4. The great talk [Simple Made Easy](http://www.infoq.com/presentations/Simple-Made-Easy) by Rich Hickey
 
+You may also want to check out the list of good [reasons why Clojure](http://www.quora.com/Clojure/Why-would-someone-learn-Clojure) by Leo Polovets at Quora.
+
 ### Development Environments
 
 Recommended:
