@@ -26,10 +26,10 @@
 ;)
 
 ;; ### TASK B ###
-;; Create function iff [cond, if-val, else-val] that returns 
-;; the if-val if cond is true otherwise else-val.
+;; Create function iff [cond is-true is-false] that returns the is-true
+;; parameter if the cond parameter is true, and otherwise returnes the
+;; is-false parameter.
 ;; Use a map to implement it.
-;; FIXME(ivar): better description
 
 ; TODO (uncomment the test below first)
 
