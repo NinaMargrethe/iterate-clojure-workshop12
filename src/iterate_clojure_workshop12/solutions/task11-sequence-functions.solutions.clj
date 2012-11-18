@@ -31,7 +31,9 @@
 
 (reduce
   (fn [prevVal person]
-    (if (< (get prevVal :age) (get person :age)) person))
+    (if (< (get prevVal :age) (get person :age))
+      person
+      prevVal))
   {:age 0}
   '({ :name "Lars", :age 25 },
       { :name "Jakub", :age 32 }))
