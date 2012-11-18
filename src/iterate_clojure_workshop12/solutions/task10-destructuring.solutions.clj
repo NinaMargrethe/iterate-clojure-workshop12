@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task16-destructuring
+(ns iterate-clojure-workshop12.task10-destructuring
   (:require [clojure.test :refer :all]))
 
 ;; ### TASK A ###

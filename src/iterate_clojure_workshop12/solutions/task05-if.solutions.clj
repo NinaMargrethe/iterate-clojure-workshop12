@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task9-if
+(ns iterate-clojure-workshop12.task05-if
   (:require [clojure.test :refer :all]))
 
 ;; Return the absolute value of a number using if.

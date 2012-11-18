@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task6-datastruct-as-fun)
+(ns iterate-clojure-workshop12.task03-datastruct-as-fun)
 
 ;; ### TASK A ###
 ;; Company finder: create a map city -> map of streets -> vector of companies on it
@@ -17,7 +17,7 @@
 ;;
 ;; Note: We are going to build on this task later
 
-; see below
+; TODO
 
 ;; ### TASK B ###
 ;; Use the map to find out what company is at address Bygdøy allé 1, New Oslo
@@ -26,7 +26,4 @@
 ;; a name to your map that you can use later when looking for values in it:
 ;; (finder-map ...)
 
-((({"New Oslo" 
-  {"Bygdøy allé" 
-    ["Iterate" "ComoYo" "Peppes Pizza"]}}
-    "New Oslo") "Bygdøy allé") 1)
+; TODO

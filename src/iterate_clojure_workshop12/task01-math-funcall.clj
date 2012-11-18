@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task4-math-funcall)
+(ns iterate-clojure-workshop12.task01-math-funcall)
 
 ;; ### TASK A ###
 ;; Determine if 3*3*3*3 -2 is less than 13*13*5 / 10.

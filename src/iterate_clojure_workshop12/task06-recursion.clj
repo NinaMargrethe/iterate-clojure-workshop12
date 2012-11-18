@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task10-recursion
+(ns iterate-clojure-workshop12.task06-recursion
   (:require [clojure.test :refer :all]))
 
 ;; Create an add function that sums a list. 
