@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task11-map)
+(ns iterate-clojure-workshop12.task11-seq-fun)
 
 ;; map
 ;; Use the * function to sum to lists '(1 2 3) and '(2 2 2) to '(2 4 6)

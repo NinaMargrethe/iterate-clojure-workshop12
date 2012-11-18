@@ -1,4 +1,4 @@
-(ns iterate-clojure-workshop12.task11-map)
+(ns iterate-clojure-workshop12.task11-seq-fun)
 
 ;; map
 ;; Use the + function to sum two lists '(1 2 3) and '(2 2 2) to (the expected result being '(3 4 5))
@@ -19,9 +19,5 @@
 
 ;; Use map and apply to find how old the oldest person in the list is in this map:
 ;; '({ :name "Lars", :age 25 }, { :name "Jakub", :age 32 })
-
-; TODO
-
-;; Modify the previous solution to find the complete map of the oldest person using reduce.
 
 ; TODO
