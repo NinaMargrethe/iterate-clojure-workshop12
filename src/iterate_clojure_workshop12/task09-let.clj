@@ -2,7 +2,7 @@
   (:require [clojure.test :refer :all]))
 
 ;; ### TASK A ###
-;; Refactor the company-finder from task8-functions.clj to be more
+;; Refactor the company-finder from task 3 to be more
 ;; readable by assigning the map and the individual the individual  
 ;; subexpressions (streets, companies) to local constants with let
 
