@@ -11,7 +11,7 @@
 ;; ### TASK A ###
 ;; Company finder 2: Create the function company-finder that 
 ;; takes [street num city] and returns the company there,
-;; using the map created in task 6
+;; using the map created in task 3
 ;; The map should not be visible outside of the function.
 
 ; TODO

@@ -1,6 +1,6 @@
 (ns demo)
 ;;;; Catnip demo
-
+;; DEMO -1: Show file opening in Catnip with built-in search
 
 ;; DEMO 0: Error reporting
 ;;
@@ -13,8 +13,7 @@
 ;; DEMO 1: Wrap with ()
 ;;
 ;; To wrap st. with (), select it first and type (
-;;
-wrap-me-with-parens
+;;(wrap-me-with-parens)
 
 
 
@@ -27,3 +26,5 @@ wrap-me-with-parens
 ;; - then change the string, Ctrl-E (could -S), call again (up arrow)
 ;;(defn greeting []
 ;;  (println "Hello monsters!"))
+(defn greeting []
+  (println "Hello world!"))
