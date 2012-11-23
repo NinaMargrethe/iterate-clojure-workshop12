@@ -157,6 +157,7 @@ Next steps
 * Watch Chas Emerick's [excellent screencast Starting Clojure](http://cemerick.com/2012/05/02/starting-clojure/). It is a great example of Clojure development in general and, in particular, interactive Clojure web development without restarts, with live code changes and direct access to the running app via REPL. It also makes a good job of introducing the Eclipse Clojure plugin Counterclockwise and the popular web framework Compojure with the template engine Enlive and HTTP abstraction Ring. Highly recommended!
 * Start solving the [programming tasks at 4clojure.com](http://www.4clojure.com/problems), from elementary to hard, while following some of the [top 100 users](http://www.4clojure.com/users) so that you can compare your solution to theirs and thus learn from them
 * Read the excellent [Joy of Clojure](http://joyofclojure.com/) that introduces not only the language but also, more importantly, the philosophy behind it and the correct way of doing things
+* Explore [clojure-doc.org](http://clojure-doc.org/)
 
 
 ----
