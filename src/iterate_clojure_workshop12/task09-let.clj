@@ -2,14 +2,16 @@
   (:require [clojure.test :refer :all]))
 
 ;; ### TASK A ###
-;; Refactor the company-finder from task 3 to be more
-;; readable by assigning the map and the individual the individual  
-;; subexpressions (streets, companies) to local constants with let
+;; Refactor the company-finder from task 4 to be more
+;; readable by assigning the map and the individual  
+;; subexpressions to local constants with let
+;; (f.ex. constants atlas (the map), city-val, street-val, company)
 
+(declare company-finder)
 ; TODO
 
 ;; Test for the function
 (deftest company-finder-test
-  (is (= "Iterate" (company-finder "Bygdøy allé" 0 "New Oslo")))
-  (is (= "ComoYo" (company-finder "Bygdøy allé" 1 "New Oslo")))
-  (is (= "Peppes Pizza" (company-finder "Bygdøy allé" 2 "New Oslo"))))
+  (is (= "Iterate" (company-finder "Bygdoey allee" 0 "New Oslo")))
+  (is (= "Comoyo" (company-finder "Bygdoey allee" 1 "New Oslo")))
+  (is (= "Peppes Pizza" (company-finder "Bygdoey allee" 2 "New Oslo"))))

@@ -12,18 +12,19 @@
 ;; takes [street num city] and returns the company there.
 ;; The map should not be visible outside of the function.
 
+; (declare company-finder) ;; no needed anymore though we could leave it here
 ; TODO
 (defn company-finder [street num city]
-  ((({"New Oslo" {"Bygdøy allé" ["Iterate" "ComoYo" "Peppes Pizza"]}}
+  ((({"New Oslo" {"Bygdoey allee" ["Iterate" "Comoyo" "Peppes Pizza"]}}
     city) street) num))
 
 ;; Test for the function
 ;; TIP: Un-comment the (comment ...) to disable the test temporarily:
 ;(comment
 (deftest company-finder-test
-  (is (= "Iterate" (company-finder "Bygdøy allé" 0 "New Oslo")))
-  (is (= "ComoYo" (company-finder "Bygdøy allé" 1 "New Oslo")))
-  (is (= "Peppes Pizza" (company-finder "Bygdøy allé" 2 "New Oslo"))))
+  (is (= "Iterate" (company-finder "Bygdoey allee" 0 "New Oslo")))
+  (is (= "Comoyo" (company-finder "Bygdoey allee" 1 "New Oslo")))
+  (is (= "Peppes Pizza" (company-finder "Bygdoey allee" 2 "New Oslo"))))
 ;)
 
 ;; ### TASK B ###
@@ -36,37 +37,6 @@
   ({true if-val, false else-val} cond))
 
 ;; Test for the function
-;(comment
 (deftest iff-test
   (is (= "It's true!" (iff (> 1 0) "It's true!" "Your math is wrong")))
   (is (= :falsy (iff false :truthy :falsy))))
-;)
-
-;; ### TASK C (optional) ###
-;; Write the function iff-fn similar to B but if-val and else-val are functions 
-;; that are executed and 
-;; their result is returned; only the function that is actually needed
-;; should be executed.
-;; Use the new function in the company finder to print 
-;; "Sorry, that street isn't that long" and return nil if the street number 
-;; is higher than the street's length
-;; You can hard-code the street length as 3
-;; Tip: println returns nil
-
-; TODO
-(defn iff-fn [cond if-fn else-fn]
-  (
-    ({true if-fn, false else-fn} cond)
-))
-
-(defn company-finder2 [street num city]
-  (iff-fn (< num 3)
-    (fn [] (company-finder street num city))
-    (fn [] (println "Sorry, that street isn't that long"))))
-
-;; Test for the function
-;(comment
-(deftest company-finder2-test
-  (is (= "Iterate" (company-finder2 "Bygdøy allé" 0 "New Oslo")))
-  (is (nil? (company-finder2 "Bygdøy allé" Integer/MAX_VALUE "New Oslo"))))
-;)

@@ -1,8 +1,8 @@
 (ns iterate-clojure-workshop12.task02-datastruct)
 
 ;; ### TASK A ###
-;; Is list of the number 1 2 3 equal to a vector of the same numbers? 
-;; Use the = operator
+;; Is list of the numbers 1 2 3 equal to a vector of the same numbers? 
+;; Tip: Use the function = to compare them
 
 ; TODO
 

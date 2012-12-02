@@ -9,7 +9,7 @@
   (/ (* 13 13 5) 10))
 
 ;; ### TASK B ###
-;; Same as A but use java.lang.Math.pow to simplify the expression with
+;; Same as A but use java.lang.Math/pow to simplify the expression with
 ;; 3^4 and 13^2
 
 (< 

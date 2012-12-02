@@ -14,16 +14,14 @@
 ;; using the map created in task 3
 ;; The map should not be visible outside of the function.
 
+(declare company-finder)  ;; Declare the non-existing fun to make the test run
 ; TODO
 
 ;; Test for the function
-;; TIP: Un-comment the (comment ...) to disable the test temporarily:
-;(comment
 (deftest company-finder-test
-  (is (= "Iterate" (company-finder "Bygdøy allé" 0 "New Oslo")))
-  (is (= "ComoYo" (company-finder "Bygdøy allé" 1 "New Oslo")))
-  (is (= "Peppes Pizza" (company-finder "Bygdøy allé" 2 "New Oslo"))))
-;)
+  (is (= "Iterate" (company-finder "Bygdoey allee" 0 "New Oslo")))
+  (is (= "Comoyo" (company-finder "Bygdoey allee" 1 "New Oslo")))
+  (is (= "Peppes Pizza" (company-finder "Bygdoey allee" 2 "New Oslo"))))
 
 ;; ### TASK B ###
 ;; Create function iff [cond is-true is-false] that returns the is-true
@@ -31,11 +29,13 @@
 ;; is-false parameter.
 ;; Use a map to implement it.
 
+(declare iff)
 ; TODO (uncomment the test below first)
 
 ;; Test for the function
-(comment
+;; TIP: Un-comment the (comment ...) to disable the test temporarily:
+;(comment
 (deftest iff-test
   (is (= "It's true!" (iff (> 1 0) "It's true!" "Your math is wrong")))
   (is (= :falsy (iff false :truthy :falsy))))
-)
+;)

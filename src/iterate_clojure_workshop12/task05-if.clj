@@ -3,6 +3,7 @@
 
 ;; Create the function abs that takes a number and returns its absolute value
 
+(declare abs)
 ; TODO
 
 ;; Test for the function

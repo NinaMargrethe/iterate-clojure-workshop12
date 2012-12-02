@@ -5,11 +5,12 @@
 ;; Refactor the company-finder from task8-functions.clj to be more
 ;; readable by assigning the map and the individual the individual  
 ;; subexpressions (streets, companies) to local constants with let
+;; (f.ex. constants atlas (the map), city-val, street-val, company)
 
 ; TODO
 (defn company-finder [street num city]
   (let [
-    atlas {"New Oslo" {"Bygdøy allé" ["Iterate" "ComoYo" "Peppes Pizza"]}}
+    atlas {"New Oslo" {"Bygdoey allee" ["Iterate" "Comoyo" "Peppes Pizza"]}}
     city-val (atlas city)
     street-val (city-val street)
     company (street-val num)]
@@ -17,9 +18,10 @@
 
 ;; Test for the function
 (deftest company-finder-test
-  (is (= "Iterate" (company-finder "Bygdøy allé" 0 "New Oslo")))
-  (is (= "ComoYo" (company-finder "Bygdøy allé" 1 "New Oslo")))
-  (is (= "Peppes Pizza" (company-finder "Bygdøy allé" 2 "New Oslo"))))
+  (is (= "Iterate" (company-finder "Bygdoey allee" 0 "New Oslo")))
+  (is (= "Comoyo" (company-finder "Bygdoey allee" 1 "New Oslo")))
+  (is (= "Peppes Pizza" (company-finder "Bygdoey allee" 2 "New Oslo"))))
+
 
 ;; ### TASK B (optional) ###
 ;; if you have implemented iff-fn and used it to return null when an
