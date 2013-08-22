@@ -1,7 +1,15 @@
-Iterate Clojure Introduction Workshop 2012
-==========================================
+Iterate Clojure Introduction Workshop
+=====================================
 
 A practical, hands-on introduction into programming Clojure, the best JVM language ever :-)
+
+[Clojure](http://clojure.org/) is a modern Lisp language ([Why Lisp?](http://www.paulgraham.com/avg.html)) 
+targetting JVM and browsers, designed for concurrency, simplicity, and productivity. Clojure us especially 
+popular for interactive web development and data analysis.
+
+The workshops starts with a brief overview of why you might want to consider Clojure, then introduces the
+elementary building blocks necessary to build something useful in a series of exercises, and concludes
+with the construction of a simple web application (if time permits).
 
 Preparation before the workshop
 -------------------------------
