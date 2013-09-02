@@ -14,9 +14,11 @@ with the construction of a simple web application (if time permits).
 Preparation before the workshop
 -------------------------------
 
-To get this repository:
+To get this repository using `git`:
 
     bash$ git clone git://github.com/iterate/iterate-clojure-workshop12.git; cd iterate-clojure-workshop12
+
+Alternatively, [download it as ZIP](https://github.com/iterate/iterate-clojure-workshop12/archive/master.zip) and unpack it somewhere and enter it.
 
 To get all the tools you will need ready, execute the attached script (you might want to check/modify it if you already have Leiningen or Catnip installed):
 
@@ -26,7 +28,7 @@ To get all the tools you will need ready, execute the attached script (you might
 It will
 
 * Download and initialize the latest Leiningen 2 (Clojure build tool)
-* Leiningen will download Clojure 1.4.0
+* Leiningen will download latest Clojure
 * It will download and start Catnip, the leightweight in-browser Clojure IDE;
     * Catnip should start a browser, if it doesn't, open the URL printed (Catnip is optimized for Chrome so use that)
     * In Catnip, type f.ex. `(println "hello")` and press Control-E to evaluate it to see that all is working
@@ -56,21 +58,19 @@ Recommended:
 Partially supported:
 
 * Eclipse with Counterclockwise (quite popular)
-* IntelliJ with LaClojure (somehow outdated)
+* [LightTable](http://www.lighttable.com/) 0.5+
 * Emacs with [Clojure Mode](https://github.com/technomancy/clojure-mode) and [nREPL](https://github.com/kingtim/nrepl.el)
-
-Unsupported (but you're free to try it anyway at your own risk):
-
-* LightTable
 
 ### Tip: Make Catnip available by default
 
 We have added the Catnip Leiningen plugin as an explicit dependency of this project. You can also make it available to all project by adding it to your `~/.lein/profiles.clj`:
 
     {:user {:plugins [
-        [lein-catnip "0.4.1"]
+        [lein-catnip "0.5.1"]
         ]
     }}
+
+(Verify the [latest version at Clojars](https://clojars.org/lein-catnip).)
 
 Trying to run `lein edit` without having Catnip in profiles or the project.clj will result in the failure "'edit' is not a task."
 
@@ -90,7 +90,7 @@ The workshop consists of:
 ### Clojure reference documentation
 
 * [Clojure-mini cheatsheet](https://docs.google.com/document/pub?id=1ELQ0S03SLwYm1G-iXMQXnLDoKTggD93FqIMD9_ME5og)
-* [Official Clojure heatsheet](http://clojure.org/cheatsheet)
+* [Official Clojure heatsheet](http://clojure.org/cheatsheet) ([variant with tooltips](http://jafingerhut.github.io/cheatsheet-clj-1.3/cheatsheet-tiptip-cdocs-summary.html) - sweet!)
 * [Doc & examples for functions at clojuredocs.org](http://clojuredocs.org/)
 * REPL: `(doc <function-name>)`, `(find-doc <regular expression string/pattern>)`, examples: `(cdoc <function name>)`
 
@@ -164,7 +164,7 @@ Next steps
 
 * Watch Chas Emerick's [excellent screencast Starting Clojure](http://cemerick.com/2012/05/02/starting-clojure/). It is a great example of Clojure development in general and, in particular, interactive Clojure web development without restarts, with live code changes and direct access to the running app via REPL. It also makes a good job of introducing the Eclipse Clojure plugin Counterclockwise and the popular web framework Compojure with the template engine Enlive and HTTP abstraction Ring. Highly recommended!
 * Start solving the [programming tasks at 4clojure.com](http://www.4clojure.com/problems), from elementary to hard, while following some of the [top 100 users](http://www.4clojure.com/users) so that you can compare your solution to theirs and thus learn from them
-* Read the excellent [Joy of Clojure](http://joyofclojure.com/) that introduces not only the language but also, more importantly, the philosophy behind it and the correct way of doing things
+* Read the excellent [Joy of Clojure](http://joyofclojure.com/) that introduces not only the language but also, more importantly, the philosophy behind it and the correct way of doing things (recommended for people that already have some experience with Clojure; complete beginners should check out Stuart Halloway's [Programming Clojure](http://www.amazon.com/Programming-Clojure-Stuart-Halloway/dp/1934356867/), 2nd ed. (not the same as Chas Emerick's [Clojure Programming](http://www.amazon.com/Clojure-Programming-Chas-Emerick/dp/1449394701/) though it might be a good choice too))
 * Explore [clojure-doc.org](http://clojure-doc.org/)
 
 
