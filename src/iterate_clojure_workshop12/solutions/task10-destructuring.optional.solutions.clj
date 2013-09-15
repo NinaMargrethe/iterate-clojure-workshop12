@@ -2,7 +2,7 @@
   (:require [clojure.test :refer :all]))
 
 ;; ### TASK A ###
-;; Change Uncle Scrooge's debtor registry form task14-java-interop.clj
+;; Change Uncle Scrooge's debtor registry from task08-java-interop.clj
 ;;  to use ["fname" "lname"] instead of "fname lname" and modify
 ;; check-debt to return "amount<tab>lname, fname"
 ;; ex: "1814 Duck, Donald"
@@ -29,7 +29,7 @@
   (is (= "1814\tDuck, Donald" (check-debt ["Donald" "Duck"]))))
 
 ;; ### TASK B ###
-;; Company finder 3: Change company-finder from task8-functions.clj
+;; Company finder 3: Change company-finder from task04-functions.clj
 ;; to use named arguments (i.e. a destructured map)"
 
 (defn company-finder [{ :keys [street num city]}]
