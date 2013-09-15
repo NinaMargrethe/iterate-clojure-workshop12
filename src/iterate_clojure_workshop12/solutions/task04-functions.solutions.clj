@@ -15,16 +15,16 @@
 ; (declare company-finder) ;; no needed anymore though we could leave it here
 ; TODO
 (defn company-finder [street num city]
-  ((({"New Oslo" {"Bygdoey allee" ["Iterate" "Comoyo" "Peppes Pizza"]}}
+  ((({"New Oslo" {"Frognerveien" ["Iterate" "Comoyo" "Peppes Pizza"]}}
     city) street) num))
 
 ;; Test for the function
 ;; TIP: Un-comment the (comment ...) to disable the test temporarily:
 ;(comment
 (deftest company-finder-test
-  (is (= "Iterate" (company-finder "Bygdoey allee" 0 "New Oslo")))
-  (is (= "Comoyo" (company-finder "Bygdoey allee" 1 "New Oslo")))
-  (is (= "Peppes Pizza" (company-finder "Bygdoey allee" 2 "New Oslo"))))
+  (is (= "Iterate" (company-finder "Frognerveien" 0 "New Oslo")))
+  (is (= "Comoyo" (company-finder "Frognerveien" 1 "New Oslo")))
+  (is (= "Peppes Pizza" (company-finder "Frognerveien" 2 "New Oslo"))))
 ;)
 
 ;; ### TASK B ###

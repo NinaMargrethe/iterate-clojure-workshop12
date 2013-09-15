@@ -12,6 +12,6 @@
 
 ;; Test for the function
 (deftest company-finder-test
-  (is (= "Iterate" (company-finder "Bygdoey allee" 0 "New Oslo")))
-  (is (= "Comoyo" (company-finder "Bygdoey allee" 1 "New Oslo")))
-  (is (= "Peppes Pizza" (company-finder "Bygdoey allee" 2 "New Oslo"))))
+  (is (= "Iterate" (company-finder "Frognerveien" 0 "New Oslo")))
+  (is (= "Comoyo" (company-finder "Frognerveien" 1 "New Oslo")))
+  (is (= "Peppes Pizza" (company-finder "Frognerveien" 2 "New Oslo"))))

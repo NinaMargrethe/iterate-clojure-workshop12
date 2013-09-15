@@ -12,11 +12,8 @@
 ;; You can hard-code the street length as 3
 ;; Tip: println returns nil
 
-; TODO
 (defn iff-fn [cond if-fn else-fn]
-  (
-    ({true if-fn, false else-fn} cond)
-))
+  (({true if-fn, false else-fn} cond)))
 
 (defn company-finder2 [street num city]
   (iff-fn (< num 3)
@@ -26,6 +23,6 @@
 ;; Test for the function
 ;(comment
 (deftest company-finder2-test
-  (is (= "Iterate" (company-finder2 "Bygdoey allee" 0 "New Oslo")))
-  (is (nil? (company-finder2 "Bygdoey allee" Integer/MAX_VALUE "New Oslo"))))
+  (is (= "Iterate" (company-finder2 "Frognerveien" 0 "New Oslo")))
+  (is (nil? (company-finder2 "Frognerveien" Integer/MAX_VALUE "New Oslo"))))
 ;)

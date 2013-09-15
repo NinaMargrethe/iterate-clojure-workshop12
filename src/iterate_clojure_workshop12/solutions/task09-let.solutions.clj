@@ -10,7 +10,7 @@
 ; TODO
 (defn company-finder [street num city]
   (let [
-    atlas {"New Oslo" {"Bygdoey allee" ["Iterate" "Comoyo" "Peppes Pizza"]}}
+    atlas {"New Oslo" {"Frognerveien" ["Iterate" "Comoyo" "Peppes Pizza"]}}
     city-val (atlas city)
     street-val (city-val street)
     company (street-val num)]
@@ -18,9 +18,9 @@
 
 ;; Test for the function
 (deftest company-finder-test
-  (is (= "Iterate" (company-finder "Bygdoey allee" 0 "New Oslo")))
-  (is (= "Comoyo" (company-finder "Bygdoey allee" 1 "New Oslo")))
-  (is (= "Peppes Pizza" (company-finder "Bygdoey allee" 2 "New Oslo"))))
+  (is (= "Iterate" (company-finder "Frognerveien" 0 "New Oslo")))
+  (is (= "Comoyo" (company-finder "Frognerveien" 1 "New Oslo")))
+  (is (= "Peppes Pizza" (company-finder "Frognerveien" 2 "New Oslo"))))
 
 
 ;; ### TASK B (optional) ###

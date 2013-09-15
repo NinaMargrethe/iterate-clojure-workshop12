@@ -26,8 +26,8 @@
 ;; Test
 (comment
 (deftest company-finder-test
-  (is (= "ComoYo" 
-    (company-finder 
-      {:street "Bygdøy allé", :num 1, :city "New Oslo"}))))
+  (is (= "ComoYo"
+    (company-finder
+      {:street "Frognerveien", :num 1, :city "New Oslo"}))))
 )
 
