@@ -24,8 +24,6 @@
     (fn [] (println "Sorry, that street isn't that long")))))
 
 ;; Test for the function
-;(comment
 (deftest company-finder2-test
   (is (= "Iterate" (company-finder2 "Bygdoey alle" 0 "New Oslo")))
   (is (nil? (company-finder2 "Bygdoey alle" Integer/MAX_VALUE "New Oslo"))))
-;)

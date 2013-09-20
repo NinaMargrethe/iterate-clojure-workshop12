@@ -19,13 +19,10 @@
     city) street) num))
 
 ;; Test for the function
-;; TIP: Un-comment the (comment ...) to disable the test temporarily:
-;(comment
 (deftest company-finder-test
   (is (= "Iterate" (company-finder "Frognerveien" 0 "New Oslo")))
   (is (= "Comoyo" (company-finder "Frognerveien" 1 "New Oslo")))
   (is (= "Peppes Pizza" (company-finder "Frognerveien" 2 "New Oslo"))))
-;)
 
 ;; ### TASK B ###
 ;; Create function iff [cond, if-val, else-val] that returns 

@@ -24,6 +24,8 @@
 ; TODO (uncomment the test first)
 
 ;; Test
+;; TIP: Comment the (comment ...) with ; or delete the line before and after
+;; the test to enable the test:
 (comment
 (deftest company-finder-test
   (is (= "ComoYo"

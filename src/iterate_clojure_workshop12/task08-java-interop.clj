@@ -21,8 +21,10 @@
 ; TODO implement add-debtor
 
 ;; Test 2
-;(comment
+;; TIP: Comment the (comment ...) with ; or delete the line before and after
+;; the test to enable the test:
+(comment
 (deftest add-debtor-test
   (do (add-debtor "Launchpad McQuack" 9999))
   (is (= 9999 (check-debt "Launchpad McQuack"))))
-;)
+)

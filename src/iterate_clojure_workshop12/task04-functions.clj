@@ -33,9 +33,10 @@
 ; TODO (uncomment the test below first)
 
 ;; Test for the function
-;; TIP: Un-comment the (comment ...) to disable the test temporarily:
-;(comment
+;; TIP: Comment the (comment ...) with ; or delete the line before and after
+;; the test to enable the test:
+(comment
 (deftest iff-test
   (is (= "It's true!" (iff (> 1 0) "It's true!" "Your math is wrong")))
   (is (= :falsy (iff false :truthy :falsy))))
-;)
+)

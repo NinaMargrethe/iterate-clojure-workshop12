@@ -15,8 +15,6 @@
 ; TODO
 
 ;; Test for the function
-;(comment
 (deftest company-finder2-test
   (is (= "Iterate" (company-finder2 "Frognerveien" 0 "New Oslo")))
   (is (nil? (company-finder2 "Frognerveien" Integer/MAX_VALUE "New Oslo"))))
-;)
